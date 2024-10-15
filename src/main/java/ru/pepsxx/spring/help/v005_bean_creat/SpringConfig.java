@@ -27,7 +27,6 @@ public class SpringConfig {
         return MusicFab.getMusicFabCon();
     }
 
-
     @Bean
     MusicFab muFabSet(){
         return MusicFab.getMusicFabSet();
