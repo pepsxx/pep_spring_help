@@ -24,7 +24,7 @@ public class Main {
         AnnotationConfigApplicationContext context =
                 new AnnotationConfigApplicationContext(SpringConfig.class); // Путь к Классу с настройками.
 
-        TestBean testBean = context.getBean("testBean", TestBean.class);// Имя бина с маленькой буквы.
+        TestBean testBean = context.getBean("testBeanSingleton", TestBean.class);// Имя бина с маленькой буквы.
 
         System.out.println("testBean = " + testBean);
 
