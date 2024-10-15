@@ -6,9 +6,16 @@ public class Main {
     public static void main(String[] args) {
         System.out.println("""
                 Чтобы заработали аннотации @PostConstruct и @PreDestroy
-                нужны зависимости:
+                нужны зависимости, в данном примере:
                 1:  jakarta.annotation-api
                 2:  jakarta.activation-api
+                
+                Использовать jakarta или javax  зависит от версии JDK и Spring
+                
+                Spring | JDK              | Namespace
+                -------------------------------------
+                6.0.x  | JDK 17 to JDK 21 | jakarta
+                5.3.x  | JDK 8  to JDK 21 | javax
                 """);
 
         AnnotationConfigApplicationContext context =
