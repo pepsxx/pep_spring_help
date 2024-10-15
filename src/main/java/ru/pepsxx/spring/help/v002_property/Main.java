@@ -5,7 +5,7 @@ import org.springframework.context.annotation.AnnotationConfigApplicationContext
 public class Main {
     public static void main(String[] args) {
         System.out.println("""
-                Использование файла properties
+                Использование файлов настроек:
                 1:  В классе @Configuration добавить аннотацию(и) @PropertySource с путем к файлу настроек
                     @PropertySource("classpath:myProperties.yml")
                     @PropertySource("classpath:myProperties.properties")
@@ -16,7 +16,7 @@ public class Main {
         AnnotationConfigApplicationContext context =
                 new AnnotationConfigApplicationContext(SpringConfig.class);
 
-        TestBean testBean = context.getBean("testBeanSingleton", TestBean.class);// Имя бина с маленькой буквы.
+        TestBean testBean = context.getBean("testBean", TestBean.class);
 
         System.out.println("testBean.getNamePro() = " + testBean.getNamePro());
         System.out.println("testBean.getNameYml() = " + testBean.getNameYml());
