@@ -6,13 +6,6 @@ import org.springframework.stereotype.Component;
 @Component
 public class MusicKpop implements Music {
 
-    @Value("${yml.name}")
-    private String name;
-
-    public String getName() {
-        return name;
-    }
-
     @Override
     public String song() {
         return "MusicKpop";
