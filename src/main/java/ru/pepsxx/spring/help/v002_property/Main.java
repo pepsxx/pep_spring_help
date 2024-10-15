@@ -7,8 +7,8 @@ public class Main {
         System.out.println("""
                 Использование файла properties
                 1:  В классе @Configuration добавить аннотацию(и) @PropertySource с путем к файлу настроек
-                    @PropertySource("myProperties.yml")
-                    @PropertySource("myProperties.properties")
+                    @PropertySource("classpath:myProperties.yml")
+                    @PropertySource("classpath:myProperties.properties")
                 2:  Для внедрения в поле поставить аннотацию @Value с именем настройки
                     @Value("${name}")
                 """);
