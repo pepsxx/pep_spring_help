@@ -1,4 +1,4 @@
-package ru.pepsxx.spring.help.v001;
+package ru.pepsxx.spring.help.v001_start;
 
 import org.springframework.stereotype.Component;
 
