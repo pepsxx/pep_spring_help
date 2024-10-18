@@ -14,7 +14,7 @@ public class PlayerConst {
         this.music = music;
     }
 
-    void playMusic() {
+    public void playMusic() {
         System.out.println("Играет Constructor " + music.song());
     }
 }

@@ -10,8 +10,8 @@ public class PlayerField {
     @Autowired
     @Qualifier("musicJazz")
     private Music music;
-    
-    void playMusic() {
+
+    public void playMusic() {
         System.out.println("Играет Field " + music.song());
     }
 

@@ -1,6 +1,7 @@
 package ru.pepsxx.spring.help.v002_property;
 
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
+import org.springframework.core.env.Environment;
 
 public class Main {
     public static void main(String[] args) {

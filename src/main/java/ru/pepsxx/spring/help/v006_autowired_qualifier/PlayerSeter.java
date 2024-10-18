@@ -14,7 +14,7 @@ public class PlayerSeter {
         this.music = music;
     }
 
-    void playMusic() {
+    public void playMusic() {
         System.out.println("Играет Setter " + music.song());
     }
 
