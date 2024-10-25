@@ -1,4 +1,4 @@
-package ru.pepsxx.spring.help.v008_jdbc;
+package ru.pepsxx.spring.help.v009_jdbcTemplate;
 
 
 public class Person {

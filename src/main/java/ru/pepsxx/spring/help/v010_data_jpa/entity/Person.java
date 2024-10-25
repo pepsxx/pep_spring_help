@@ -1,8 +1,23 @@
-package ru.pepsxx.spring.help.v008_jdbc;
+package ru.pepsxx.spring.help.v010_data_jpa.entity;
+
+import jakarta.persistence.Entity;
+import jakarta.persistence.Id;
+import jakarta.persistence.NamedQuery;
+import org.springframework.data.jpa.repository.Query;
 
 
+@NamedQuery(
+        name = "Person.findAllBy",
+        query = "FROM Person p WHERE p.id = 20")
+
+@NamedQuery(
+        name = "Person.findByName",
+        query = "FROM Person p WHERE p.name = :name OR p.id = 2")
+
+@Entity
 public class Person {
 
+    @Id
     private long id;
 
     private String name;

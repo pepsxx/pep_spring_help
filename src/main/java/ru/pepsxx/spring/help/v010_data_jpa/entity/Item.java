@@ -1,4 +1,4 @@
-package ru.pepsxx.spring.help.v008_jdbc;
+package ru.pepsxx.spring.help.v010_data_jpa.entity;
 
 public class Item {
 
