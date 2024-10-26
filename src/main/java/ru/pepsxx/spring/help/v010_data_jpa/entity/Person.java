@@ -3,7 +3,6 @@ package ru.pepsxx.spring.help.v010_data_jpa.entity;
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
 import jakarta.persistence.NamedQuery;
-import org.springframework.data.jpa.repository.Query;
 
 
 @NamedQuery(
