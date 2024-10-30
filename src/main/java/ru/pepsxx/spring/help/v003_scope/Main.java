@@ -6,8 +6,8 @@ public class Main {
     public static void main(String[] args) {
         System.out.println("""
                 Scope задается аннотацией @Scope
-                @Scope("singleton") - Возвращается всё врем я один и тот же бин
-                @Scope("prototype") - Возвращается каждый раз новый бин
+                @Scope(BeanDefinition.SCOPE_SINGLETON) - Возвращается всё врем я один и тот же бин
+                @Scope(BeanDefinition.SCOPE_PROTOTYPE) - Возвращается каждый раз новый бин
                 """);
 
         AnnotationConfigApplicationContext context =
