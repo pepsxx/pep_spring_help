@@ -12,7 +12,7 @@ public class TestBean1 {
     TestDependencyBean testDependencyBean1;
 
     @Autowired
-    TestDependencyBean testName2; // Qualifier можно не писать если имя поля совпадает с именем бина
+    TestDependencyBean testName2; // Qualifier можно не писать если имя поля совпадает с именем бина, но работать не будет если есть бин с @Primary
 
     @Autowired
     TestDependencyBean testDependencyBean3;
