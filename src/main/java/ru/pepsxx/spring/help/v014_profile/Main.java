@@ -1,6 +1,5 @@
 package ru.pepsxx.spring.help.v014_profile;
 
-import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
 public class Main {

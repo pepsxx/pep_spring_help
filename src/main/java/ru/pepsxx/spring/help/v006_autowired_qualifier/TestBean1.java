@@ -1,5 +1,6 @@
 package ru.pepsxx.spring.help.v006_autowired_qualifier;
 
+import jakarta.annotation.Resource;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Component;
@@ -12,7 +13,10 @@ public class TestBean1 {
     TestDependencyBean testDependencyBean1;
 
     @Autowired
-    TestDependencyBean testName2; // Qualifier можно не писать если имя поля совпадает с именем бина, но работать не будет если есть бин с @Primary
+    @Resource
+    TestDependencyBean testName2;   // @Qualifier можно не писать если имя поля совпадает с именем бина
+                                    // , но работать не будет если есть бин с @Primary,
+                                    // можно починить аннотацией @Resource
 
     @Autowired
     TestDependencyBean testDependencyBean3;
