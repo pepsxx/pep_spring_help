@@ -22,12 +22,16 @@ public class Main {
         MusicSet musicSet = context.getBean("musicSet", MusicSet.class);
         MusicFab muFabCon = context.getBean("muFabCon", MusicFab.class);
         MusicFab muFabSet = context.getBean("muFabSet", MusicFab.class);
+        TestBean1 testBean1 = context.getBean("testBean1", TestBean1.class);
+        TestBean2 testBean2 = context.getBean("testBean2", TestBean2.class);
 
         System.out.println("music    = " + music.getName());
         System.out.println("musicCon = " + musicCon.getName());
         System.out.println("musicSet = " + musicSet.getName());
         System.out.println("muFabCon = " + muFabCon.getName());
         System.out.println("muFabSet = " + muFabSet.getName());
+        System.out.println("testBean1 = " + testBean1);
+        System.out.println("testBean2 = " + testBean2);
 
         context.close();
 
