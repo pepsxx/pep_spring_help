@@ -1,4 +1,4 @@
-package ru.pepsxx.spring.help.v005_bean_creat;
+package ru.pepsxx.spring.help.v006_autowired_qualifier;
 
 public class TestDependencyBean {
 

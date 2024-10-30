@@ -1,4 +1,4 @@
-package ru.pepsxx.spring.help.v005_bean_creat;
+package ru.pepsxx.spring.help.v006_autowired_qualifier;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
@@ -12,22 +12,17 @@ public class TestBean1 {
     TestDependencyBean testDependencyBean1;
 
     @Autowired
-    TestDependencyBean testName2; // Qualifier Можно не писать если имя поля совпадает с именем бина
+    TestDependencyBean testName2; // Qualifier можно не писать если имя поля совпадает с именем бина
 
-
-    public void setTestDependencyBean(TestDependencyBean testDependencyBean1) {
-        this.testDependencyBean1 = testDependencyBean1;
-    }
-
-    public void setTestName2(TestDependencyBean testName2) {
-        this.testName2 = testName2;
-    }
+    @Autowired
+    TestDependencyBean testDependencyBean3;
 
     @Override
     public String toString() {
         return "TestBean1{" +
                 "testDependencyBean1=" + testDependencyBean1 +
                 ", testName2=" + testName2 +
+                ", testDependencyBean3=" + testDependencyBean3 +
                 '}';
     }
 }
