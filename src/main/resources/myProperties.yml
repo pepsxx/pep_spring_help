@@ -1,1 +1,3 @@
 yml.name: TestNameFromFileProperties-yml
+
+spring.profiles.active: pep

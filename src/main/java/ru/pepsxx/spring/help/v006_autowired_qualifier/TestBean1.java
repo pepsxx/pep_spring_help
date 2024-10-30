@@ -2,9 +2,9 @@ package ru.pepsxx.spring.help.v006_autowired_qualifier;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
-import org.springframework.context.annotation.Configuration;
+import org.springframework.stereotype.Component;
 
-@Configuration
+@Component
 public class TestBean1 {
 
     @Autowired
