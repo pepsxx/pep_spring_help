@@ -4,11 +4,14 @@ import org.springframework.context.annotation.AnnotationConfigApplicationContext
 import org.springframework.jdbc.core.BeanPropertyRowMapper;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.jdbc.datasource.DriverManagerDataSource;
+import ru.pepsxx.spring.help.v000_pre_start.PreStartUtil;
 
+import java.io.IOException;
 import java.util.List;
 
 public class Main {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws IOException, InterruptedException {
+        PreStartUtil.go();
         System.out.println("""
                 Для использования JdbcTemplate требуются зависимости:
                 1: spring-jdbc.
@@ -20,7 +23,7 @@ public class Main {
 
         DriverManagerDataSource driverManagerDataSource = new DriverManagerDataSource();
         driverManagerDataSource.setDriverClassName("org.postgresql.Driver");
-        driverManagerDataSource.setUrl("jdbc:postgresql://localhost:40554/postgres");
+        driverManagerDataSource.setUrl("jdbc:postgresql://localhost:40554/pep_db");
         driverManagerDataSource.setUsername("admin");
         driverManagerDataSource.setPassword("qQ111111");
 

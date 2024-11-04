@@ -5,7 +5,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>ru.pepsxx.spring.help</groupId>
-    <artifactId>pep_pro_spring_help</artifactId>
+    <artifactId>pep_spring_help</artifactId>
     <version>1.0-SNAPSHOT</version>
 
     <properties>
@@ -106,5 +106,12 @@
             <artifactId>javax.inject</artifactId>
             <version>1</version>
         </dependency>
+        <!-- https://mvnrepository.com/artifact/org.liquibase/liquibase-core -->
+        <dependency>
+            <groupId>org.liquibase</groupId>
+            <artifactId>liquibase-core</artifactId>
+            <version>4.29.2</version>
+        </dependency>
+
     </dependencies>
 </project>

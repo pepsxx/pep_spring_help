@@ -22,7 +22,7 @@ public class SpringConfig {
     public DataSource dataSource() {
         DriverManagerDataSource ds = new DriverManagerDataSource();
         ds.setDriverClassName("org.postgresql.Driver");
-        ds.setUrl("jdbc:postgresql://localhost:40554/postgres");
+        ds.setUrl("jdbc:postgresql://localhost:40554/pep_db");
         ds.setUsername("admin");
         ds.setPassword("qQ111111");
         return ds;

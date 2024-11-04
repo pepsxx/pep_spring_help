@@ -1,11 +1,13 @@
 package ru.pepsxx.spring.help.v008_jdbc;
 
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
+import ru.pepsxx.spring.help.v000_pre_start.PreStartUtil;
 
 import java.sql.*;
 
 public class Main {
     public static void main(String[] args) throws SQLException {
+        PreStartUtil.go();
         System.out.println("""
                 Для использования Jdbc требуются зависимости:
                 1:  JDBC Driver (postgresql).
@@ -14,7 +16,7 @@ public class Main {
         AnnotationConfigApplicationContext context =
                 new AnnotationConfigApplicationContext(SpringConfig.class);
 
-        String url = "jdbc:postgresql://localhost:40554/postgres";
+        String url = "jdbc:postgresql://localhost:40554/pep_db";
         String user = "admin";
         String password = "qQ111111";
 
