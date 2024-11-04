@@ -8,6 +8,25 @@ public class DockerComposeUtil {
     }
 
     static public void start() throws IOException, InterruptedException {
+        System.out.println("""
+                ****************************************************************************************************
+                docker_compose
+                Зависимости:
+                1.  spring-boot-docker-compose
+
+                Настройки в compose.yml:
+                name: pep_XXXXX_help-4XX54                  # Имя compose stack
+                services:
+                    my_name:                                # Имя ?
+                        container_name: PostgresSQL-4XX54   # Имя container в stack
+                        image: postgres                     # Название образа на котором основан контейнер
+                        ports:
+                            - "4XX54:5432"                  # forwarding port
+                        environment:
+                            POSTGRES_USER: admin            # Имя администратора db
+                            POSTGRES_PASSWORD: qQ111111     # Пароль администратора db
+                            POSTGRES_DB: pep_db             # Имя db
+                ****************************************************************************************************""");
         new ProcessBuilder("docker-compose", "-f", "compose.yml", "up", "-d")
                 .start()
                 .waitFor();
