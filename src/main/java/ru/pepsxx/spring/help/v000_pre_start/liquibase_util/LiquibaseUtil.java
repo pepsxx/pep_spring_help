@@ -45,7 +45,6 @@ public class LiquibaseUtil {
                     new ClassLoaderResourceAccessor(),
                     new JdbcConnection(connection)
             ).update("");
-            System.out.println("Liquibase - Обновлен");
         }
     }
 }

@@ -19,6 +19,6 @@ public class PreStartUtil {
         } catch (LiquibaseException | SQLException | IOException | InterruptedException e) {
             throw new RuntimeException(e);
         }
-        System.out.println("-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-");
+        System.out.println("****************************************************************************************************");
     }
 }
