@@ -4,7 +4,7 @@ import org.springframework.context.annotation.AnnotationConfigApplicationContext
 import org.springframework.jdbc.core.BeanPropertyRowMapper;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.jdbc.datasource.DriverManagerDataSource;
-import ru.pepsxx.spring.help.v000_pre_start.PreStartUtil;
+import ru.pepsxx.spring.help.pre_start.PreStartUtil;
 
 import java.io.IOException;
 import java.util.List;

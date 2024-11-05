@@ -1,7 +1,7 @@
 package ru.pepsxx.spring.help.v008_jdbc;
 
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
-import ru.pepsxx.spring.help.v000_pre_start.PreStartUtil;
+import ru.pepsxx.spring.help.pre_start.PreStartUtil;
 
 import java.sql.*;
 

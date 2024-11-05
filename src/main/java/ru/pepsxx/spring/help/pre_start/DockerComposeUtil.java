@@ -1,4 +1,4 @@
-package ru.pepsxx.spring.help.v000_pre_start.docker_compose_util;
+package ru.pepsxx.spring.help.pre_start;
 
 import java.io.IOException;
 
@@ -11,8 +11,6 @@ public class DockerComposeUtil {
         System.out.println("""
                 ****************************************************************************************************
                 docker_compose
-                Зависимости:
-                1.  spring-boot-docker-compose
 
                 Настройки в compose.yml:
                 name: pep_XXXXX_help-4XX54                  # Имя compose stack

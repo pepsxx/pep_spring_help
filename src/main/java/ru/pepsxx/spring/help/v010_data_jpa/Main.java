@@ -1,9 +1,7 @@
 package ru.pepsxx.spring.help.v010_data_jpa;
 
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
-import ru.pepsxx.spring.help.v000_pre_start.PreStartUtil;
+import ru.pepsxx.spring.help.pre_start.PreStartUtil;
 import ru.pepsxx.spring.help.v010_data_jpa.config.SpringConfig;
 import ru.pepsxx.spring.help.v010_data_jpa.entity.Person;
 import ru.pepsxx.spring.help.v010_data_jpa.repository.TestRepository;
@@ -12,8 +10,6 @@ import java.io.IOException;
 import java.util.List;
 
 public class Main {
-
-    private static final Logger log = LoggerFactory.getLogger(Main.class);
 
     public static void main(String[] args) throws IOException, InterruptedException {
         PreStartUtil.go();

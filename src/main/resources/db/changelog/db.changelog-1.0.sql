@@ -1,9 +1,9 @@
 --liquibase formatted sql
 --changeset pep_sxx:1
-DROP TABLE IF EXISTS public.Person CASCADE;
+DROP TABLE IF EXISTS Person CASCADE;
 
 --changeset pep_sxx:2
-DROP TABLE IF EXISTS public.Item CASCADE;
+DROP TABLE IF EXISTS Item CASCADE;
 
 --changeset pep_sxx:3
 --one_to_many

@@ -1,8 +1,6 @@
-package ru.pepsxx.spring.help.v000_pre_start;
+package ru.pepsxx.spring.help.pre_start;
 
 import liquibase.exception.LiquibaseException;
-import ru.pepsxx.spring.help.v000_pre_start.docker_compose_util.DockerComposeUtil;
-import ru.pepsxx.spring.help.v000_pre_start.liquibase_util.LiquibaseUtil;
 
 import java.io.IOException;
 import java.sql.SQLException;

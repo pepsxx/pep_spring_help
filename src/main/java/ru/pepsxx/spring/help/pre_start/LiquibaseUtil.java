@@ -1,11 +1,11 @@
-package ru.pepsxx.spring.help.v000_pre_start.liquibase_util;
+package ru.pepsxx.spring.help.pre_start;
 
 import liquibase.Liquibase;
 import liquibase.database.jvm.JdbcConnection;
 import liquibase.exception.LiquibaseException;
 import liquibase.resource.ClassLoaderResourceAccessor;
-import ru.pepsxx.spring.help.v000_pre_start.connect_util.ConnectUtil;
 
+import java.io.IOException;
 import java.sql.Connection;
 import java.sql.SQLException;
 
@@ -13,7 +13,7 @@ public class LiquibaseUtil {
     private LiquibaseUtil() {
     }
 
-    static public void start() throws LiquibaseException, SQLException {
+    static public void start() throws LiquibaseException, SQLException, IOException {
         System.out.println("""
                 ****************************************************************************************************
                 liquibase
