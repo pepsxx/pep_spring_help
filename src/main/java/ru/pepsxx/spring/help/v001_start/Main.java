@@ -4,6 +4,7 @@ import org.springframework.context.annotation.AnnotationConfigApplicationContext
 
 public class Main {
     public static void main(String[] args) {
+
         System.out.println("""
                 Добавить 3 зависимости:
                 1: spring-core.
